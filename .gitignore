@@ -35,6 +35,7 @@ wandb/
 Thumbs.db
 .vscode/
 .idea/
+*.code-workspace
 
 # Gradio scratch
 gradio_cached_examples/
