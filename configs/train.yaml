@@ -1,0 +1,24 @@
+# Training configuration for YOLOv8 fine-tuning on car damage data.
+# Used by src/train.py.
+
+# Pretrained backbone - yolov8n / yolov8s / yolov8m / yolov8l / yolov8x
+model: yolov8m.pt
+
+# Path to the dataset YAML produced by Roboflow.
+# Override with --data on the CLI if your path differs.
+data: datasets/car-damage/data.yaml
+
+# Run name & output project dir
+name: car_damage_v1
+project: runs/detect
+
+# Training hyperparameters
+epochs: 50
+imgsz: 640
+batch: 16
+patience: 10        # early stopping patience (epochs without improvement)
+plots: true         # save loss curves, PR curves, confusion matrix
+seed: 42
+
+# Optional: device selection ("0", "cpu", "0,1")
+device: 0

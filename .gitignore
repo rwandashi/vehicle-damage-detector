@@ -1,0 +1,41 @@
+# Python bytecode and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets - NEVER commit your real .env
+.env
+.env.local
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Datasets - too large, downloaded via download_data.py
+datasets/
+data/
+Car-Damage-Detection-*/
+
+# Model weights & training outputs - hosted externally
+*.pt
+*.pth
+*.onnx
+checkpoints/
+runs/
+wandb/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Gradio scratch
+gradio_cached_examples/
+flagged/
